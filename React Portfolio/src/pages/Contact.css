@@ -1,0 +1,66 @@
+.contact {
+    padding: 1.5rem;
+    padding-top: 50px; /* Add padding to move content below header */
+    margin-top: 5rem;
+    margin-bottom: 3rem;
+    color: #f1f1f1;
+    text-align: left;
+}
+
+ .contact h1 {
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-size: 30px;
+    padding-bottom: 0.5rem;
+    top: 8rem;
+    margin-left: 0;  /* Aligns the heading to the left */
+}
+
+.contact form {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    width: 80%; /* width to give some space on the right */
+    margin-left: 0;  /* Aligns the form to the left */
+    align-items: flex-start;
+}
+
+.contact form div {
+    margin-bottom: 15px;
+    width: 100%; /* Makes the form responsive (keep full width for form elements */
+}
+
+.contact label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: bold;
+}
+
+.contact input,
+.contact textarea {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-sizing: border-box;
+}
+
+.contact textarea {
+    height: 100px;
+    resize: vertical;
+}
+
+.contact .error {
+    color: red;
+    font-size: 0.875em;
+    margin-top: 5px;
+}
+
+@media (max-width: 768px) {
+    .contact {
+        margin-top: 12rem; /* Adjust margin-top for smaller screens */
+        text-align: left;   
+    }
+    .contact h1 {
+        margin-left: 0; /* Aligns the heading to the left */
+    }
+}
