@@ -1,0 +1,79 @@
+.portfolio {
+    padding: 30px;
+    padding-top: 60px; /* Add padding to move content below header */
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+.portfolio h1 {
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    text-align: left;
+    font-size: 30px;
+    margin-bottom: 20px;
+    margin-top: 17px;
+    padding-top: 70px;
+    margin-left: 18px;
+}
+
+.projects {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.project-card {
+    flex: 1 1 calc(33.333% - 20px);
+    margin: 40px;
+    margin-bottom: 20px;
+    height: 250px;
+    border: 1px solid #ccc; /* Add a border to the card */
+    border-radius: 8px; /* Rounded corners */
+    overflow: hidden; /* Ensures the image stays within the card bounds */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Add a shadow to the card */
+    position: relative; /* Allows text to be positioned on top of the image */
+}
+
+.project-card img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover; /* This ensures the image covers the entire card area */
+    border-radius: 0px;/*  Rounded corners */
+    padding: 0;
+    display: block; /* Removes the bottom margin that some images have by default */
+}
+
+.project-card h2 {
+    font-size: 1.5rem;
+    color: white;
+    margin: 0;
+    top: 10px;
+    left: 50px;
+    padding: 5px 10px; /* Padding around the title text */
+    position: absolute;
+    z-index: 2; /* Ensures the text is on top of the image */
+}
+
+.project-links a {
+    margin: 0 5px;
+    color: #007bff;
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+.project-links a:hover {
+    color: #0056b3;
+}
+
+@media (max-width: 768px) {
+    .portfolio {
+        margin-top: 8rem; /* Addjust margin-top for smaller screens */
+    }
+    .projects {
+        flex-direction: column;
+    }
+
+    .project-card {
+        flex: 1 1 100%;
+        max-width: 100%;
+        height: auto;
+    }
+}
