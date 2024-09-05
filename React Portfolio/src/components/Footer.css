@@ -1,0 +1,31 @@
+footer {
+    position: relative;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    text-align: center;
+}
+
+footer div {
+    margin-top: 10px;
+}
+
+footer a {
+    margin: 0 15px;
+    text-decoration: none;
+    color: #007bff;
+}
+
+.footer-icon {
+    width: 24px;
+    height: 24px;
+    margin: 0 15px;
+    vertical-align: middle; /* Align the icon with text */
+}
+
+@media screen and (max-width: 768px) {
+    .footer-icon {
+        margin: 0 10px; /* Adjust the margin for smaller screens */
+        padding-top: 10px; /* Add padding to the top of the icon */
+    }
+}
