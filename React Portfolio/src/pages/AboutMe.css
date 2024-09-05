@@ -1,0 +1,39 @@
+.container {
+    padding: 2px;
+    border-radius: 10px;
+    margin: 50px;
+}
+
+.container h1 {
+    font-size: 30px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    margin-left: 5px;;
+    text-align: left;
+    padding-top: 85px; /* Add padding to move content below header */
+}
+
+img {
+    width: 100px;
+    height: 145px;
+    padding-top: 0px;
+}
+
+.container p {
+    text-align: justify;
+    padding-top: 0px;
+}
+
+@media (max-width: 768px) {
+    .container h1 {
+        padding-top: 80px; /* Add padding for smaller screens */
+        margin-top: 10rem; /* Adjust margin-top for smaller screens */
+    }
+    img {
+        padding-top: 80px;
+        margin-top: -5rem; 
+    }
+    .container p {
+        padding-top: 0px;
+        margin-top: 2rem;
+    }
+}
