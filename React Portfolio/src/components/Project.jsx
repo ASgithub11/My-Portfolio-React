@@ -1,5 +1,6 @@
 import React from "react";
 import "./Project.css";
+import githubLogo from "../assets/images/github-logo.jpg";
 
 const Project = ({title, image, deployedLink, githubLink}) => {
     return (
