@@ -1,0 +1,78 @@
+/* Style the header */
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    background-color: rgb(0, 3, 51);
+    box-shadow: 0 0 10px #f0eeee1a;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 1000; /* Ensure header stays on top */
+    height: auto; /* The header height adjust based on content */
+    padding-bottom: 0px;
+}
+
+/* Style the heading (h1) */
+h1 {
+    color: #fff;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-style: italic;
+    font-size: 2.5rem;
+    margin-left: 60px;
+}
+
+/* Style the navigation */
+nav {
+    color: #fff;
+    text-decoration: none;
+    font-size: 1.5rem;
+    display: flex;
+    gap: 75px;
+    margin-right: 60px;
+}
+
+/* Style the navigation links */
+nav a{
+    color: #fff;
+    font-size: 1.5rem;
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+/* Style the navigation links when hovered */
+nav a:hover{
+    color: #0056b3;
+}
+
+nav a:active-link{
+    color: #0056b3;
+}
+
+/* Responsive styles */
+@media (max-width: 768px) {
+    header {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    h1 {
+        font-size: 2rem; /* Further reduce the font size on smaller screens */
+        margin-left: 0;
+        text-align: center;
+        width: 100%;
+    }
+
+    nav {
+        flex-direction: column;
+        align-items: center;
+        gap: 10px;
+        width: 100%;
+        margin-right: 0;
+    }
+
+    nav a {
+        font-size: 1rem; /* Adjust navigation font size for smaller screens */
+    }
+}
