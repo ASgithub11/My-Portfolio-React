@@ -1,0 +1,71 @@
+.project-card {
+    border: 1px solid #ccc;
+    margin: 50px;
+    margin-bottom: 20px;
+    background-color: #f9f9f9;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    position: relative;
+    overflow: hidden;
+}
+
+.project-card img {
+    width: 100%;
+    height: 300px; /* Fixed height to ensure it doesn't shrink */
+    object-fit: cover; /* Ensures the image covers the card area */
+    border-radius: 0px;
+    padding: 0;
+    display: block;
+}
+
+.project-card h3 {
+    font-size: 1.25rem;
+    color: #ffffff;
+    position: absolute;
+    top: 40px;
+    left: 20px;
+    margin: 0;
+    padding: 10px;
+    text-align: left;
+    
+}
+
+.project-links {
+    display: flex;
+    justify-content: center;
+    position: absolute;
+    top: 21%;
+    left: 70%;
+    transform: translate(-50%, -50%);
+    z-index: 2;
+    width: 100%;
+    padding: 15px;
+    color: white;
+    text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.8); /* Shadow for readability */
+}
+
+.project-links a {
+    display: inline-block;
+    margin: 0 20px;
+    padding: 4px 8px;
+    text-decoration: none;
+    border-radius: 4px;
+    transition: background-color 0.3s ease;
+}
+
+.project-links img {
+    width: 50px;
+    height: auto;
+    vertical-align: middle; 
+}
+
+.project-links a:hover {
+    background-color: #f0f0f0;
+}
+
+@media (max-width: 768px) {
+    .project-card {
+        flex: 1 1 100%;
+        height: auto;
+    }
+}
