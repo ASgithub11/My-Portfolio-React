@@ -10,13 +10,13 @@ const Footer = () => {
             <p>&copy; 2024 My Portfolio</p>
             <div>
                 <a href="https://github.com/ASgithub11" target="_blank" rel="noopener noreferrer">
-                    <img src={githubLogo} alt="GitHub Logo" className="footer-icon" />
+                    <img src={githubLogo} alt="GitHub Logo" className="footer-logo" />
                 </a>
                 <a href="https://linkedin.com/in/aisha-siddiqa-726578311" target="_blank" rel="noopener noreferrer">
-                    <img src={linkedinLogo} alt="LinkedIn Logo" className="footer-icon" />
+                    <img src={linkedinLogo} alt="LinkedIn Logo" className="footer-logo" />
                 </a>
                 <a href="https://stackoverflow.com/users/27184586/aisha-siddiqa" target="_blank" rel="noopener noreferrer">
-                    <img src={stackoverflowLogo} alt="Stack Overflow Logo" className="footer-icon" />
+                    <img src={stackoverflowLogo} alt="Stack Overflow Logo" className="footer-logo" />
                 </a>
             </div>
         </footer>

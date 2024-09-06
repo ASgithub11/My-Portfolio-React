@@ -16,11 +16,17 @@ footer a {
     color: #007bff;
 }
 
-.footer-icon {
+.footer-logo {
     width: 24px;
     height: 24px;
     margin: 0 15px;
     vertical-align: middle; /* Align the icon with text */
+}
+
+.footer-logo:hover {
+    cursor: pointer;
+    transform: scale(1.1); /* Scales the logo by 10% on hover */
+    box-shadow: 2px 4px 8px rgb(249, 249, 249); /* Adds a subtle shadow on hover */
 }
 
 @media screen and (max-width: 768px) {
