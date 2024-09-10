@@ -59,6 +59,10 @@ The portfolio should now be running locally at http://localhost:3000.
 - Contact: Use the contact form to send me a message or ask any questions.
 - Resume: Download a copy of my resume or view my front and back-end proficiencies.
 
+The following animation shows the web application's appearance and functionality:
+
+![Alt text](src/assets/images/My-Portfolio-Animation.gif)
+
 Link to the deployed site:
 
 https://aishasiddiqaportfolio.netlify.app/
